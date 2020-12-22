@@ -5,6 +5,7 @@
 {% endblock page_header %}
 
 {% block content %}
+<a href="{% url 'learning_logs:new_topic' %}">Add a new topic</a>
 <ul>
 	{% for topic in topics %}
 		<li>
@@ -17,7 +18,6 @@
 	{% endfor %}
 </ul>
 
-<a href="{% url 'learning_logs:new_topic' %}">Add a new topic</a>
 
 {% endblock content %}
 
